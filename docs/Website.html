@@ -131,6 +131,26 @@
     margin-top: 0.25em;
 }
     /*End of First Image CSS code*/
+    /* image rules*/
+		.image {
+			z-index: 2;
+			position: relative;
+			width: 35%;
+			/*height: 400px;*/
+			float: left;
+			margin: 1%;
+			overflow: hidden;
+		}
+		.image_left {margin-left: 14%;}
+		.image_right {margin-right: 14%;}
+		.image__img {
+			z-index: 2;
+			display: block;
+			width: 100%;
+			align-items: center;
+			justify-content: center;
+		}
+
     </style>
   <title>Website html</title>
   </head>
@@ -140,7 +160,7 @@
   <!--https://www.youtube.com/watch?v=exb2ab72Xhs-->
   <!--https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML-->
   <!--First Image-->
-    <div class="image">
+    <div class="image image_left">
       <a href="Webpage1.html"> <!--Using Image 1 as link to Webpage1-->
         <img class="image__img" src="Images/ny.jpg" alt="New York City">
         <div class="image__overlay image__overlay--blur">
@@ -153,7 +173,7 @@
 </div>
 <!--End of First Image-->
     <!--Second Image-->
-    <div class="image">
+    <div class="image image_right">
       <a href="Webpage2.html"> <!--Using Image 2 as link to Webpage2-->
         <img class="image__img" src="Images/warsaw.jpg" alt="Warsaw">
         <div class="image__overlay image__overlay--blur">
