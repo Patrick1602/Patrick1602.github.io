@@ -42,13 +42,22 @@
   }
 }
     p{text-align: center; font-family:"Audiowide", sans-serif;}
+    #text_box {
+			color: white;
+			background-color: rgba(200, 200, 200, 0.2); 
+			backdrop-filter: blur(5px);
+			position: relative;
+			width: 50%; /* width is 50% of the webpage body*/
+			height: 2.5rem;
+			margin: auto; /*margin auto automatically adds equal empty spaces on left and right, so the element is centered */
+		}
     </style>
     <title>Warszawa</title>
   </head>
   <body>
   <h1 class="glow">Paris of the North</h1>
     <a href="Website.html" style="color:white">Home</a>
-   <p style="color:aqua">Warsaw is the capital and largest city of Poland. 
+   <div id="text_box" style="color:aqua">Warsaw is the capital and largest city of Poland. 
                          The metropolis stands on the Vistula River in east-central Poland and its population is officially estimated at 1.8 million residents 
                          within a greater metropolitan area of 3.1 million residents, which makes Warsaw the 7th most-populous capital city in the European Union. 
     </p>
