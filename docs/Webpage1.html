@@ -42,16 +42,25 @@
   }
 }
       p{text-align: center; font-family:"Audiowide", sans-serif;}
+    #text_box {
+			color: white;
+			background-color: rgba(200, 200, 200, 0.2); 
+			backdrop-filter: blur(5px);
+			position: relative;
+			width: 50%; /* width is 50% of the webpage body*/
+			height: 2.5rem;
+			margin: auto; /*margin auto automatically adds equal empty spaces on left and right, so the element is centered */
+		}
     </style>
     <title>New York City</title>
   </head>
   <body>
   <h1 class="glow">The Big Apple</h1>
     <a href="Website.html" style="color:white">Home</a>
-  <p style="color:aqua">New York City (NYC), often simply called New York, is the most populous city in the United States. 
+  <div id="textbox" style="color:aqua">New York City (NYC), often simply called New York, is the most populous city in the United States. 
                          With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), 
                          New York City is also the most densely populated major city in the United States.
-    </p>
+    </div>
   </body>
  <footer style="color:white" id="footer">
   Patrick Tedjakusuma
