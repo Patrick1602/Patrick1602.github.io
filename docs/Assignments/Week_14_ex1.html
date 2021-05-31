@@ -1,1 +1,47 @@
+<html>
+  <head>
+    <style>
+    * {
+  box-sizing: border-box;
+}
 
+#column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px; 
+
+.two_columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+ #header {
+   padding: 20px;
+   text-align: center;
+  }
+ #footer {
+   padding: 20px;
+   text-align: right;
+  }
+    </style>
+   </head>
+  <body>
+    
+    <div id="header" style="background-color:cyan">
+        <h1> Header</h1>
+      </div>
+    
+    <div class="two_comlumns"> 
+      <div id="column" style="background-color:blue"> Column1</div>
+      <div id="column" style="background-color:red"> Column2</div>
+      
+      
+      
+      <div id="footer" style="background-color:pink">
+        <h1> Footer</h1>
+      </div>
+      
+    </div>
+  </body>  
+</html>
