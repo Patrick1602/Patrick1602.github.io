@@ -2,22 +2,27 @@
 <html>
   <head>
     <style>
-    .two_columns {
-      outline:solid 4px red;
-      margin: auto;*/
-      overflow: auto;
-    #column {
-      float: left;
-      width: 50%;
-      padding: 10px;
-      height: 300px; 
-      }
+    * {
+  box-sizing: border-box;
+}
+
+#column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 300px; 
+
+.two_columns:after {
+  content: "";
+  display: table;
+  clear: both;
+}
     </style>
    </head>
   <body>
     <div class="two_comlumns"> 
-      <div id="column"> Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1</div>
-      <div id="column"> Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2</div>
+      <div id="column" style="background-color:blue"> Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1Column1</div>
+      <div id="column" style="background-color:red"> Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2Column2</div>
     </div>
   </body>  
 </html>
