@@ -2,15 +2,76 @@
 <html lang="en-US">
 <head>
   <style>
-  .column1 {
-  margin: auto;
-  width: 80%;
-  padding: 15px;
+  * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: auto;
+}
+#table {
+	overflow:auto;
+}
+
+#header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+
+}
+#columns {
+float: left;
+width: 75%;
+}
+.side {
+	float: left;
+	width: 25%;
+	background-color: #333;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding: 1%;
+
+  float: left;
+  background-color: lightgrey;
+}
+
+#columns .card {
+  width: 48%;
+}
+.side .card {
+  width: 98%;
+  background-color: #ddd;
+}
+
+
+#footer {
+	position: sticky;
+	bottom: 0px;
+	width: 100%;
+	padding: 1px;
+	background-color: #333;
+}
+#footer p {
+	font-size: 1.2em;
+	color: #f2f2f2;
+	text-align: center;
+}
   </style>
 </head>
 <body>
+<div id="header"> 
+<h2> This is the header</h2>
+</div>
 <div id="table">
-  <div class="column1"> 
+  <div class="columns"> 
   <h2>The avatar intro but he's british</h2>
   <p>wo'ah, earf, birming'am, fish n' chips...</p>
   <p>long ago, the fou' nations live togedah in ah'mony. then ev'ryfing changed when the IRA attacked.... </p>
@@ -18,6 +79,15 @@
   <p>'e vanished. 100 yea's passed and me bruv and i found the new avatah. a fish n' chips bendah named aang. although 'is chipbendin' skills ah great, </p>
   <p>'e still 'as a lo' to lea'n 'fore 'e's ready to save anyone m8.</p>
   </div>
- </div>
+  <div id="footer" style="background-color:pink;">Footer</div>
+  </div>
+  <div class="side">
+		<div class="card">
+      <h2> This is side card 1</h2>
+    </div>
+      <div class="card">
+      <h2> This is side card 2</h2>
+    </div>
+  </div>  
 </body>
 </html>
