@@ -15,7 +15,42 @@
     body {
   font-family: Audiowide;
 }
-      #footer {
+	    .dropbtn {
+  background-color: #ff5900;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: orange;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: ;}
+      
+#footer {
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -56,7 +91,14 @@
   </head>
   <body>
   <h1 class="glow">The Big Apple</h1>
-    <a href="Website.html" style="color:white">Home</a>
+    <div class="dropdown">
+  <button class="dropbtn">Learn More</button>
+  <div class="dropdown-content"> <!--Hoverable dropdown button-->
+    <a href="https://www.google.com/maps/d/viewer?mid=1TYXnyQGs0mbOVmywtM-5FjcLRD4&ll=40.758538257753145%2C-73.91602428589056&z=11">Explore</a>
+    <a href="https://www1.nyc.gov/events/index.html">Events</a>
+    <a href="Website.html">Home</a>
+  </div>
+</div>
    <div id="text_box" style="color:aqua">New York City (NYC), often simply called New York, is the most populous city in the United States. 
                          With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), 
                          New York City is also the most densely populated major city in the United States.
