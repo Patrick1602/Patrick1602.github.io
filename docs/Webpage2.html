@@ -15,6 +15,47 @@
     body {
   font-family: Audiowide;
 }
+	    .dropbtn {
+  background-color: #ff5900;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  top: 4px;
+  left: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: orange;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: ;}
+#google_translate_element{ background-color:#ff5900;
+			   position: absolute;
+  			   top: 4px;
+  			   right: 16px;
+  			   font-size: 18px;
       #footer {
   position: fixed;
   bottom: 0;
@@ -56,7 +97,13 @@
   </head>
   <body>
   <h1 class="glow">Paris of the North</h1>
-    <a href="Website.html" style="color:white">Home</a>
+<div class="dropdown">
+  <div class="dropbtn">Learn More</div>
+  <div class="dropdown-content" id="menu"> <!--Hoverable dropdown button-->
+    <a href="https://en.wikipedia.org/wiki/Warsaw">About</a>
+    <a href="https://www.google.com/maps/d/viewer?mid=1N80-nqWrCDZ3wRKWNBNnuNwsiBk&ie=UTF8&t=m&oe=UTF8&msa=0&ll=52.244754183192114%2C21.018216500000012&z=16">Explore</a>
+    <a href="https://www.um.warszawa.pl/en">Events</a>
+    <a href="Website.html">Home</a>
    <div id="text_box" style="color:aqua">Warsaw is the capital and largest city of Poland. 
                          The metropolis stands on the Vistula River in east-central Poland and its population is officially estimated at 1.8 million residents 
                          within a greater metropolitan area of 3.1 million residents, which makes Warsaw the 7th most-populous capital city in the European Union. 
