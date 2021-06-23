@@ -57,11 +57,62 @@
   			   right: 16px;
   			   font-size: 18px;
 	    }
-						   
+/*zoom with rotate*/.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}				   
       .hover06 figure:hover img {
 	-webkit-transform: rotate(0) scale(1);
 	transform: rotate(0) scale(1);
-	      
+	    }/*zoom with rotate*/
 #footer {
   position: fixed;
   bottom: 0;
@@ -117,12 +168,12 @@
                          With an estimated 2019 population of 8,336,817 distributed over about 302.6 square miles (784 km2), 
                          New York City is also the most densely populated major city in the United States.
 	   
-	   <div class="hover06 column">
+	   <div class="hover06 column"><!--zoom with rotate-->
   <div>
     <figure><img src="Images/rotate1.jpg" /></figure>
   </div>
-  </div>
-    </div>
+  </div><!--zoom with rotate-->
+    
 		   
 	  <div id="google_translate_element" align="right"></div>
 		<script type="text/javascript"> function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
