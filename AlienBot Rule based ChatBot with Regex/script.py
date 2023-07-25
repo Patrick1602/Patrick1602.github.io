@@ -62,7 +62,7 @@ class AlienBot:
         return self.answer_why_intent()
       elif found_match and intent =='cubed_intent':
         return self.cubed_intent(found_match.groups()[0])
-    # the return self.no_match_intent() should be outside the for loop (instead of being inside an else statement inside the for loop). Otherwise every time you input an intent other than “your planet” it won’t even loop through the rest of the dictionary, instead it will go to no_match in the end.
+
     else:
       return self.no_match_intent()
 
